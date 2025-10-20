@@ -7,26 +7,40 @@ body {
 }
 .subtitle {
   font-family: 'Dancing Script', 'Great Vibes', cursive;
-  font-size: 3.5rem; /* 🔥 tăng kích thước chữ */
-  font-weight: 600;
-  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
   text-align: center;
   margin-top: 15px;
-  letter-spacing: 1.2px;
-  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-  animation: fadeIn 2s ease-in-out;
+  letter-spacing: 1.5px;
+  position: relative;
+  overflow: hidden;
+  text-shadow: 0 0 10px rgba(255,255,255,0.6),
+               0 0 20px rgba(0,255,200,0.4),
+               0 0 30px rgba(0,255,200,0.3);
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(35px);
+/* 💫 Hiệu ứng ánh sáng lướt qua chữ */
+.subtitle::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255,255,255,0.8), transparent);
+  animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    left: -75%;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  100% {
+    left: 125%;
   }
 }
+
 
 
 
@@ -226,6 +240,7 @@ footer {
   transform: scale(1.1);
   transition: transform 0.3s ease;
 }
+
 
 
 
