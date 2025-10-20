@@ -6,17 +6,16 @@ body {
   text-align: center;
 }
 .subtitle {
-  font-family: 'Dancing Script', 'Great Vibes', cursive; /* font chữ mềm mại */
-  font-size: 1.6rem;
+  font-family: 'Dancing Script', 'Great Vibes', cursive;
+  font-size: 1.8rem;
   color: #fff;
   text-align: center;
   margin-top: 10px;
   letter-spacing: 1px;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
   animation: fadeIn 2s ease-in-out;
 }
 
-/* Hiệu ứng xuất hiện mượt mà */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -27,6 +26,7 @@ body {
     transform: translateY(0);
   }
 }
+
 
 .hero {
   position: relative;
@@ -224,4 +224,5 @@ footer {
   transform: scale(1.1);
   transition: transform 0.3s ease;
 }
+
 
