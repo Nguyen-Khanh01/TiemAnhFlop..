@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>✨ Tiệm Ảnh Flop' • Photobooth Studio ✨</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+  <!-- Hero -->
+  <header class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>✨ TIỆM ẢNH FLOP'<br>• Photobooth Studio ✨</h1>
+      <p>Lưu giữ khoảnh khắc — Tạo nên kỷ niệm hoàn hảo</p>
+    </div>
+  </header>
+
+  <!-- Gói chụp -->
+  <section class="packages">
+    <h2>Chọn gói chụp của bạn</h2>
+    <div class="package-list">
+      <div class="package" onclick="selectPackage(1)">
+        <h3>Gói Cơ Bản</h3>
+        <p>• 200 tấm ảnh<br>• Thời lượng: 2 giờ</p>
+        <div class="price">2.500.000đ</div>
+      </div>
+
+      <div class="package" onclick="selectPackage(2)">
+        <h3>Gói Nâng Cao</h3>
+        <p>• Không giới hạn ảnh<br>• Thời lượng: 2.5 giờ</p>
+        <div class="price">3.200.000đ</div>
+      </div>
+
+      <div class="package" onclick="selectPackage(3)">
+        <h3>Gói Premium</h3>
+        <p>• Không giới hạn ảnh<br>• Thời lượng: 3.5 giờ</p>
+        <div class="price">4.300.000đ</div>
+      </div>
+
+      <div class="package" onclick="selectPackage(4)">
+        <h3>Gói Sự Kiện</h3>
+        <p>• Không giới hạn ảnh<br>• Thời lượng: 4.5 giờ</p>
+        <div class="price">5.100.000đ</div>
+      </div>
+    </div>
+
+    <button id="bookBtn" onclick="bookNow()">📸 Đặt Ngay</button>
+  </section>
+
+  <!-- Mô tả chi tiết -->
+  <section class="details">
+      
+    <ul>
+      
+      <li>Các gói đều có người hỗ trợ setup, đèn, hướng dẫn Trước, Trong và Sau sự kiện.</li>
+      <li>Khung ảnh được thiết kế riêng theo sự kiện, phối theo tổng màu background và gửi lại.</li>
+      <li>Nếu quá số lượng ảnh in trong gói, sẽ linh động chuyển qua gói khác để tối ưu chi phí.</li>
+      <li>In thêm lẻ ảnh: 20K/2 ảnh. Thuê thêm giờ: 800K/giờ.</li>
+      <li>Ảnh in có QR code ngay trên ảnh, có thể quét và tải ngay tại sự kiện.</li>
+      <li>Có thể trình chiếu Slide ảnh trực tiếp sau khi khách chụp xong qua link web Fotos cung cấp ngay tại sự kiện.</li>
+      <li>Có website riêng chứa toàn bộ ảnh đã chụp để mọi người có thể tải ảnh về.</li>
+      <li>Không giới hạn file chụp.</li>
+    </ul>
+  </section>
+
+  <!-- Modal chọn liên hệ -->
+  <div id="contactModal" class="modal">
+    <div class="modal-content">
+      <h3>Chọn phương thức liên hệ</h3>
+      <p>Bạn muốn đặt lịch qua:</p>
+      <div class="contact-buttons">
+        <button class="fb-btn" onclick="contactFacebook()">💬 Facebook</button>
+        <button class="zalo-btn" onclick="contactZalo()">📱 Zalo</button>
+      </div>
+      <button class="close-btn" onclick="closeModal()">Đóng</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 TIỆM ẢNH FLOP' | Photobooth Studio</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
