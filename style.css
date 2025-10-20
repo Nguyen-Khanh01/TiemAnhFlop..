@@ -7,7 +7,7 @@ body {
 }
 .subtitle {
   font-family: 'Dancing Script', 'Great Vibes', cursive;
-  font-size: 1.8rem;
+  font-size: 4.8rem;
   color: #fff;
   text-align: center;
   margin-top: 10px;
@@ -224,5 +224,6 @@ footer {
   transform: scale(1.1);
   transition: transform 0.3s ease;
 }
+
 
 
