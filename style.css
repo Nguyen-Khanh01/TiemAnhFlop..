@@ -7,7 +7,7 @@ body {
 }
 .subtitle {
   font-family: 'Dancing Script', 'Great Vibes', cursive;
-  font-size: 2.6rem; /* 🔥 tăng kích thước chữ */
+  font-size: 3.5rem; /* 🔥 tăng kích thước chữ */
   font-weight: 600;
   color: #fff;
   text-align: center;
@@ -226,6 +226,7 @@ footer {
   transform: scale(1.1);
   transition: transform 0.3s ease;
 }
+
 
 
 
